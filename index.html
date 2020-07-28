@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ho</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 400%;
+        background-color: red;
+      }
+      /* #boxone {
+        height: 300px;
+        width: 300px;
+        background-color: yellow;
+        position: static;
+      }
+      #boxtwo {
+        height: 300px;
+        width: 300px;
+        background-color: green;
+        position: fixed;
+        top : 20px;
+        bottom: 30%;
+        size : 100%; */
+
+      .b1 {
+        height: 300px;
+        width: 300px;
+        background-color: yellow;
+        position: relative;
+      }
+      .b1-child {
+        height: 100px;
+        width: 100px;
+        background-color: green;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="b1">
+      <div class="b1-child"></div>
+    </div>
+
+    <!-- <div id="boxone">
+      <div class="box-child"></div>
+    </div>
+    <div id="boxtwo">
+      <div class="box-child"></div>
+    </div> -->
+  </body>
+</html>
