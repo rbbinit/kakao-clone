@@ -1,49 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>ho</title>
-    <style>
-      .html,
-      body {
-        background-color: green;
-      }
-      .box {
-        width: 50px;
-        height: 50px;
-        background-color: red;
-        /* animation: 3s scaleSquare infinite ease-in-out; */
-      }
-      @keyframes scaleSquare {
-        /* from {
-          transform: none;
-        }
-        to {
-          transform: rotate(1turn) scale(0.5, 0.4);
-        } */
-
-        /* 0% {
-          transform: none;
-        }
-        50% {
-          transform: rotate(1turn) scale(0.5, 0.5);
-          background-color: white;
-        }
-        100% {
-          transform: none;
-          background-color: blue;
-        } */
-      }
-
-      @media screen and (min-width: 320px) and (max-width: 640px) {
-        body {
-          background-color: blue;
-        }
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <title>clone kakao</title>
   </head>
-
   <body>
-    <div class="box">111</div>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <div class="status-bar__clock">13:54</div>
+      </div>
+      <div class="status-bar__column">
+        <i class="far fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <span class="status-bar__battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </div>
   </body>
 </html>
