@@ -4,58 +4,46 @@
     <meta charset="utf-8" />
     <title>ho</title>
     <style>
-      body,
-      html {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
+      .html,
       body {
-        height: 400%;
+        background-color: green;
+      }
+      .box {
+        width: 50px;
+        height: 50px;
         background-color: red;
+        /* animation: 3s scaleSquare infinite ease-in-out; */
       }
-      /* #boxone {
-        height: 300px;
-        width: 300px;
-        background-color: yellow;
-        position: static;
-      }
-      #boxtwo {
-        height: 300px;
-        width: 300px;
-        background-color: green;
-        position: fixed;
-        top : 20px;
-        bottom: 30%;
-        size : 100%; */
+      @keyframes scaleSquare {
+        /* from {
+          transform: none;
+        }
+        to {
+          transform: rotate(1turn) scale(0.5, 0.4);
+        } */
 
-      .b1 {
-        height: 300px;
-        width: 300px;
-        background-color: yellow;
-        position: relative;
+        /* 0% {
+          transform: none;
+        }
+        50% {
+          transform: rotate(1turn) scale(0.5, 0.5);
+          background-color: white;
+        }
+        100% {
+          transform: none;
+          background-color: blue;
+        } */
       }
-      .b1-child {
-        height: 100px;
-        width: 100px;
-        background-color: green;
-        position: absolute;
-        right: 10px;
-        top: 10px;
+
+      @media screen and (min-width: 320px) and (max-width: 640px) {
+        body {
+          background-color: blue;
+        }
       }
     </style>
   </head>
 
   <body>
-    <div class="b1">
-      <div class="b1-child"></div>
-    </div>
-
-    <!-- <div id="boxone">
-      <div class="box-child"></div>
-    </div>
-    <div id="boxtwo">
-      <div class="box-child"></div>
-    </div> -->
+    <div class="box">111</div>
   </body>
 </html>
