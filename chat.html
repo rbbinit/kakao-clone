@@ -9,11 +9,11 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Chat | clone kakao</title>
   </head>
 
   <body>
-
     <div class="status-bar">
       <div class="status-bar__column">
         <div class="status-bar__clock">13:54</div>
@@ -28,61 +28,56 @@
     </div>
 
     <header class="header">
-        <div class="header__header-column">     
-          <a href="index.html" class="header__back-btn">
-            <i class="fas fa-arrow-left fa-2x"></i>
-          </a>
-          <h1 class=header__title">hokipoki</h1>
-        </div>
-        <div class="header__header-column">
-            <span class="header__icon">
-                <i class="fas fa-search"></i>
-              </span>             
-        </div>
-        <div class="header__header-column">
-            <span class="header__icon">
-                <i class="fas fa-bars"></i>
-              </span>             
-        </div>
+      <div class="header__header-column">
+        <a href="index.html" class="header__back-btn">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <span class="header__title">hokipoki</span>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-bars"></i>
+        </span>
+      </div>
     </header>
     <main class="chat">
-        <ul class="chat__messages">
-            <span class="chat__timestamp">2020년 7월 20일</span>
-            <li class="incoming-message message">
-                <img src="siba_inu.jpg" alt="" class="g-avatar message__avatar">
-                <div class="message__content">
-                    <span class="message__author">hokipoki</span>
-                    <div class="message__bubble">congrats u got new house</div>
-                </div>
-                <span class="message__timestamp">12:20</span>
-            </li>
+      <ul class="chat__messages">
+        <span class="chat__timestamp">2020년 7월 20일</span>
+        <li class="incoming-message message">
+          <img src="siba_inu.jpg" alt="" class="g-avatar message__avatar" />
+          <div class="message__content">
+            <span class="message__author">hokipoki</span>
+            <div class="message__bubble">congrats u got new house</div>
+          </div>
+          <span class="message__timestamp">12:20</span>
+        </li>
 
-            <li class="incoming-message message">                
-                <div class="message__content">                    
-                    <div class="message__bubble">thank you</div>
-                </div>
-                <span class="message__timestamp">12:25</span>
-            </li>
-        </ul>
+        <li class="incoming-message message">
+          <div class="message__content">
+            <div class="message__bubble">thank you</div>
+          </div>
+          <span class="message__timestamp">12:25</span>
+        </li>
+      </ul>
     </main>
     <div class="chat__write">
-        <div class="chat__write-column">
-            <i class="far fa-plus-square"></i>
-        </div>
-        <div class="chat__write-column">
-            <input type="text" placeholder="입력" class="chat__write-input">
-        </div>
-        <div class="chat__write-column">
-            <span class="chat__write-icon">
-                <i class="far fa-smile-wink"></i>
-            </span>
-            <span class="chat__write-icon">
-                <i class="fas fa-microphone"></i>
-            </span>
-        </div>
+      <div class="chat__write-column">
+        <i class="far fa-plus-square"></i>
+      </div>
+      <div class="chat__write-column">
+        <input type="text" placeholder="입력" class="chat__write-input" />
+      </div>
+      <div class="chat__write-column">
+        <span class="chat__write-icon">
+          <i class="far fa-smile-wink"></i>
+        </span>
+        <span class="chat__write-icon">
+          <i class="fas fa-microphone"></i>
+        </span>
+      </div>
     </div>
-
-
-
-</body>
+  </body>
 </html>
